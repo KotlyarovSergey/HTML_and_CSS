@@ -11,7 +11,7 @@ body{
     padding-left: 373px;
     padding-bottom: 100px;
     padding-right: 373px;
-    
+    max-width: 1150px;
     /* border: 1px;
     border-style: solid; */
 }
@@ -185,6 +185,7 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
+    justify-items: center;
     gap: 60px;
 }
     .feature_01{
@@ -223,25 +224,30 @@ a{
 .services{
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
     margin-top: 100px;
     width: 60%;
 }
-    .services__title{
-        color: #000;
-        text-align: center;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 120%; /* 57.6px */ 
+    .services_top{
+        grid-area: 0 / 0 / 1 / 4;
     }
-    .services__subtitle{
-        color: #888;
-        text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%; /* 22.4px */ 
-    }
+        .services__title{
+            color: #000;
+            text-align: center;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */ 
+        }
+        .services__subtitle{
+            color: #888;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */ 
+        }
     .serveces__content{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
