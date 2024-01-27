@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+.header{
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 20px;
+}
+    .header__left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 15%;
+        gap: 20px;
+    }
+    .header__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-right: 25%;
+    }
+
+/* .top__logo */
+.top__logo{
+    display: flex;
+    flex-direction: row;
+    background-color: #F1E4E6;
+}
+    .logo__img{
+        /* display: flex; */
+        width: 45%;
+    }
+    .logo__brand{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+        .logo__rectangle{
+            display: flex;
+            /* height: 10%; */
+            margin-left: 60%;
+        }
+        .logo__brand__text{
+            display: flex;
+            flex-direction: column;
+        }
+            .logo__brand__text__top{
+                display: flex;
+                color: #222;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal; 
+            }
+            .logo__brand__text__bottom{
+                display: flex;
+                direction: row;
+                color: #222;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal; 
+            }
+
+/* for__all */
+.for__all{
+
+}
+    .for__woman{
+        width: 360px;
+        height: 260px;
+        flex-shrink: 0; 
+        /* background: url("img/back_rectangle_small.png"), lightgray 50% / cover no-repeat; */
+        background-image: url(img/back_rectangle_small.png);
+        opacity: 0.4;
+        fill: rgba(33, 22, 22, 0.70); 
+    }
