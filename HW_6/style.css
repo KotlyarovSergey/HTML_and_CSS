@@ -7,6 +7,7 @@ body{
     max-width: 1600px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: 'Lato', sans-serif;
 }
 
@@ -14,14 +15,16 @@ body{
     background-color: #222;
     display: grid;
     grid-template-columns: 50% 50%;
+    width: 100%;
     align-items: center;
-    padding: 20px;
 }
     .header__left{
         display: flex;
         align-items: center;
         gap: 10px;
         margin-left: 15%;
+        margin-top: 15px;
+        margin-bottom: 15px;
         gap: 20px;
     }
     .header__right{
@@ -37,6 +40,7 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #F1E4E6;
+    width: 100%;
 }
     .logo__img{
         /* display: flex; */
@@ -78,14 +82,141 @@ body{
 
 /* for__all */
 .for__all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-template-rows: auto, auto; */
+    justify-content: center;
+    justify-items: stretch;
+    column-gap: 10px;
+    row-gap: 20px;
+    margin-top: 30px;
+    /* width: 80%; */
+}
+    .for__women__grid__area{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .for__men__grid__area{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .for__kids__grid__area{
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .accesories__grid__area{
+        grid-area: 2 / 1 / 3 / 4;
+    }
+
+    .for__all__text__display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .for__all__text__top{
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; 
+        }
+        .for__all__text__bottom{
+            color: #F16D7F;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal; 
+        }
+
+
+/* fetured__items__text */
+.fetured__items__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+    .fetured__items__text__p1{
+        color: #222;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+    .fetured__items__text__p2{
+        color: #9F9F9F;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+/* .fetured__items__content */
+.fetured__items__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 600px);
+    /* grid-template-rows: repeat(2, minmax(100px, 600px)); */
+    /* grid-auto-rows: minmax(100px, 200px); */
+    gap: 20px;
+}
+    .fetured__items__card{
+        display: flex;
+        flex-direction: column;
+
+    }   
+        .fetured__items__card__img{
+            align-items: center;
+            /* height: fit-content; */
+            max-height: 480px;
+            /* max-width: 300px; */
+            /* overflow: hidden; */
+            /* max-height: 80%; */
+            object-fit: contain;
+        }
+        .fetured__items__card__text{
+            margin: 24px 16px;
+        }
+            .fetured__items__card__text__title{
+                color: #000;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; 
+            }
+            .fetured__items__card__text__description{
+                color: #5D5D5D;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; 
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            .fetured__items__card__text__cost{
+                color: #F16D7F;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; 
+            }
+
+
+.browse__all__product{
+    margin-top: 40px;
+    border: 1px;
+    border-style: solid;
+    border-color: #F16D7F;
 
 }
-    .for__woman{
-        width: 360px;
-        height: 260px;
-        flex-shrink: 0; 
-        /* background: url("img/back_rectangle_small.png"), lightgray 50% / cover no-repeat; */
-        background-image: url(img/back_rectangle_small.png);
-        opacity: 0.4;
-        fill: rgba(33, 22, 22, 0.70); 
+    .button_all_pruduct{
+        border: none;
+        color: #F26376;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        margin: 20px 30px;
     }
