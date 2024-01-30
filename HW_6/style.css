@@ -157,7 +157,7 @@ body{
 .fetured__items__content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 600px);
+    /* grid-template-rows: repeat(2, 600px); */
     /* grid-template-rows: repeat(2, minmax(100px, 600px)); */
     /* grid-auto-rows: minmax(100px, 200px); */
     gap: 20px;
@@ -170,8 +170,9 @@ body{
         .fetured__items__card__img{
             align-items: center;
             /* height: fit-content; */
-            max-height: 480px;
-            /* max-width: 300px; */
+            /* max-height: 480px; */
+            max-width: 100%;
+            width: 100%;
             /* overflow: hidden; */
             /* max-height: 80%; */
             object-fit: contain;
