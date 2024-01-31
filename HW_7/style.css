@@ -171,6 +171,12 @@ body{
             width: 100%;
             object-fit: contain;
         }
+        .img_card_cart{
+            display: none;
+        }
+        .add__to__cart__btn{
+            display: none;
+        }
         .fetured__items__card__text{
             margin: 24px 16px;
         }
@@ -232,10 +238,6 @@ body{
         justify-content: center;
         gap: 10px;
     }
-    .logo__rectangle{
-        /* margin-left: 20%; */
-        /* margin-left: 0; */
-    }
     .logo__brand__text__top{
         font-size: 44px;
     }
@@ -250,6 +252,36 @@ body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-    } 
+    }
     
+ 
+    .img_under_cart{
+        display: none;
+    }
+
+    .img_card_cart{
+        display: block;
+    }
+
+    .add__to__cart__btn{
+        position:  absolute;
+    }
+
+    .add__to__cart__btn{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: white 1px solid;
+        padding: 10px 20px;
+        background: none;
+
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        left: 67%;
+        top: 180%;
+    }
 }
