@@ -1,0 +1,54 @@
+.dis-flex {
+    /* display: flex; */
+    /* flex-direction: row; */
+    max-width: 60%;
+}
+.nav-sz {
+    width: 25%;
+    justify-content: flex-start;
+}
+.direction {
+    display: flex;
+    flex-direction: row;
+    
+}
+.width-30 {
+    display: flex;
+    width: 50%;
+
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.text-col {
+    color: aliceblue;
+    font-size: 20px;
+}
+.color {
+    background-color:  rgb(220, 4, 4);
+}
+.dir {
+    width: 50px;
+    align-self: self-end;
+}
+.dirat {
+    position: fixed;
+    width: 5%;
+    top: 5px;
+    right: 25px;
+}
+.olp {
+    display: none;
+}
+.kko {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
